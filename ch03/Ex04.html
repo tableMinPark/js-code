@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var a;
+            alert(a);   //undefined : 변수 a가 존재하는데 값이 존재하지 않음
+            var a = null;
+            alert(a);   //undefined : 변수 a가 존재하는데 값이 존재하지 않는다 하지만 값이 없다는 것을 명시적으로 표시해줌
+            //값이 없는 것은 똑같지만 값이 없다고 명시하는 것과 명시하지 않는것이 다름
+            alert(undefined == null);   //true
+            alert(undefined === null);  //false
+
+            /* 데이터타입
+            Boolean     true / false
+            Number      -1, 0, 1, 2, 3
+            String      "a", "b", "c"
+            undefined   undefined
+            null        null
+
+            * 동등연산자 (==)
+            true == 1 : ture
+
+            * 일치연산자 (===)
+            true === 1 : false
+            */
+
+            alert(Nan === Nan);     //false / Nan : 계산할 수 없는 수 (Ex. 0/0)
+
+            alert(1 != 2);            //true
+            alert(1 != 1);            //false
+            alert("one" != "two");    //true
+            alert("one" != "one");    //false
+        </script>
+    </body>
+</html>
